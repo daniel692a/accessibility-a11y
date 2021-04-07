@@ -56,3 +56,35 @@ Nos ayudan a las personas que no tienen todas las capacidades visuales o motoras
   * Motoras
    * Varilla bucal
    * Switch
+
+
+# HTML Semántico
+
+Es una de la herramientas más poderosas que tenemos a la hora de aplicar la accesibilidad web. El HTML semántico no solo nos ayuda con algunos aspectos de presentación pero le agrega significado a nuestro contenido, esta última parte se refiere en dar significado al navegador, no al usuario, le agrega significado a los elementos. Ejemplos:
+
+### Sin HTML Semántico
+
+```html
+<div>
+	<div></div>
+</div>
+```
+
+### Con HTML Semántico
+
+```html
+<header>
+    	<article></article>
+</header>
+```
+# ARIA
+
+Accesible Rich Internet Applications, por sus siglas en inglés, existen veces en que HTML Semántico no nos alcanza, por ejemplo, en aplicaciones que tienen interacciones dinámicas o interacciones que nosotros mismos programamos con JavaScript.
+
+En esos momentos se usa ARIA, es un conjunto de atributos especiales para accesibilidad que pueden añadirse a cualquier etiqueta, pero especialmente adaptado a HTML.
+
+### Atributos de ARIA
+
+	* Roles: Definen el tipo general del objeto (como un artículo, una alerta o un deslizador), le indican al navegador cuales son las interacciones que debería esperar y como se va a usar, las usamos en situaciones muy específicas, es mejor depender del HTML semántico para comunicar los roles.
+	* Propiedades: Estas son más comunes de usar, le comunican al navegador diferentes propiedades, comunican atributos que son esenciales para el comportamiento o significado de un elemento pero que se suelen comunicar visualmente
+	* Estados: Comunican estados y cambios de estados en elementos que suelen comunicar visualmente
